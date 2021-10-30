@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/chillies.png">
+</head>
+
+<body id="test">
+  <script>
+    function myFunction() {
+      document.getElementById("demo").style.height = "200px";
+      document.getElementById("closeButton").style.display = "block";
+      document.getElementById("menuButton").style.display = "none";
+    }
+
+    function myFunctionC() {
+      document.getElementById("demo").style.height = "0";
+      document.getElementById("closeButton").style.display = "none";
+      document.getElementById("menuButton").style.display = "block";
+    }
+  </script>
+  <div class="topbar">
+    <div class="topbarElement one">
+      <img class="logo" src="images/chillies.png" alt="">
+    </div>
+    <div class="topbarElement two">
+      <a href="https://www.google.com">
+        <span class="textTopbar">Work</span>
+      </a>
+    </div>
+    <div class="topbarElement three">
+      <a href="#">
+        <span class="textTopbar">About</span>
+      </a>
+    </div>
+    <div class="topbarElement four">
+      <a href="#">
+        <span class="textTopbar">Contact</span>
+      </a>
+    </div>
+    <div class="topbarElement five">
+    </div>
+    <div class="topbarElement six">
+      <button type="button" name="button" id="menuButton" class="button" onclick="myFunction()">
+        <div id="menu">
+          <div id="menuu"></div>
+          <div id="menuu"></div>
+          <div id="menuu"></div>
+        </div>
+      </button>
+      <button type="button" name="button" id="closeButton" class="button" onclick="myFunctionC()">
+        <div id="close">&#10006;</div>
+      </button>
+    </div>
+  </div>
+
+  <div id="demo">
+  </div>
+
+
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="video-overlay">
+        <h1>Lorem Ipsum</h1>
+        <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <video class="vid" width="100%" playsinline autoplay muted loop>
+        <source src="videos/fumes.mp4" type="video/mp4">
+      </video>
+      </div>
+  </div>
+</body>
+
+</html>
