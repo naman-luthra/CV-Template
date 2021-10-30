@@ -193,6 +193,7 @@ a{
 .inner-container {
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 .video-overlay {
     position: absolute;
